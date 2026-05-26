@@ -1,4 +1,7 @@
-﻿const express = require('express')
+router.post('/', async (req, res) => {
+  console.log('Body received:', req.body); // أضف هذا
+  const { phone, name, address, notes } = req.body
+const express = require('express')
 const router = express.Router()
 const supabase = require('../supabaseClient')
 
